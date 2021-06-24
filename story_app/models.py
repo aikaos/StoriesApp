@@ -32,7 +32,7 @@ class UserStoryFile(models.Model):
     story_file = models.ForeignKey(StoryFile, on_delete=models.DO_NOTHING)
     subs = models.ForeignKey('Subscribers', on_delete=models.DO_NOTHING)
     is_watched = models.BooleanField()
-    # watch_date = models.DateTimeField()
+    watch_date = models.DateTimeField()
 
 
 class Subscribers(models.Model):
